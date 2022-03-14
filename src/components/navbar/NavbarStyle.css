@@ -1,0 +1,18 @@
+
+
+
+
+.nav-container{
+    background: black;
+    width: 100%;
+    min-width: 320px;
+    height: 50px;
+    border: 5px solid snow;
+    position: sticky;
+    background: rgb(0,212,255);
+    background: linear-gradient(90deg, rgba(0,212,255,1) 0%, rgba(9,9,121,1) 73%, rgba(9,9,121,1) 100%);
+    top:0;
+    @media screen and (max-width:920px){    /* no me modifica nada al parecer, solo una trasition leve*/
+      transition: 0.8s all ease;
+  }
+}

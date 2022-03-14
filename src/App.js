@@ -1,12 +1,18 @@
 
+import React, {useEffect} from 'react';
+import Navbar from './components/navbar/Navbar';
+import { useDispatch, useSelector} from 'react-redux';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        
+    <div>
+      <header>
+          <Navbar/>
       </header>
+
+
+      
     </div>
   );
 }
