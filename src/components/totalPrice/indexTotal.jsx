@@ -7,10 +7,15 @@ function Total() {
     
     <section className='main-total-container'>
        
- 
-     <button className='menos' >-</button>
-       <input type='text' value={1}></input>
-     <button className='mas'>+</button>  
+     <div className='input-container'>
+       <button className='menos' >-</button>
+         <input type='text' value={1}></input>
+       <button className='mas'>+</button>  
+     </div>
+
+      <div className='precio-container'>
+         <h4>Total Price: </h4><p> $ 570</p>
+      </div>
 
    </section>
   )
