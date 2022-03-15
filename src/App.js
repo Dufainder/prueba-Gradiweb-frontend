@@ -7,6 +7,7 @@ import Navbar from './components/navbar/Navbar';
 import  SliderImages from './components/sliderImages/indexSliderImages.jsx'
 import Title from './components/title/indexTitle';
 import ColorOption from './components/colorOption/indexcolor';
+import SizeOption from './components/sizeOption/indexSize';
 
 function App() {
 
@@ -42,7 +43,10 @@ function App() {
            <Title title={producto?.title} price={producto?.price} comparate={producto?.compare_at_price} />
     
            <ColorOption/>
+            
+            <SizeOption options={producto.options}/>
 
+            
         <section className='main-sizeOpcion'></section>
         <section className='main-comprar'></section>
         <section className='main--buttons'></section>

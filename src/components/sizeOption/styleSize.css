@@ -1,0 +1,56 @@
+.main-sizeoption-container{
+    display: flex;
+    gap:15px;
+    margin-left: 15px;
+
+}
+
+.sizeoption-container{
+    
+    display: flex;
+    gap: 15px;
+    width: 75%;
+    align-items: center;
+    flex-wrap:wrap;
+   
+}
+
+.sizeoption-button{
+    
+    display: flex;
+    align-items: center;
+    background-color: white;
+    justify-content: center;
+    border: 1px solid #808080;
+    color:#808080;
+    font-size: 12px;
+    padding: 5px;
+    width: 35px;
+    height: 35px;
+    
+}
+
+
+.sizeoption-button:hover{
+    
+    border: 1px solid black;
+    color:black;
+}
+
+.sizeoption-button:focus{
+    
+   
+    border: 1px solid black;
+    color:black;
+   
+}
+
+.hr{
+    display: flex;
+    width: 90%;
+    height: 2px;
+    margin-left: 10px;
+    margin-top: 20px;
+    background-color:#80808036;
+  
+}
