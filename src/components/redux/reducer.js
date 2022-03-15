@@ -1,9 +1,10 @@
-import { PRODUCT } from "./types";
+import { IMAGES, PRODUCT } from "./types";
 
 
 const initialState={
 
     product:[],
+    images:[],
 
 }
 
@@ -15,8 +16,14 @@ export const Reducer = (state=initialState, action) =>{
              product: action.payload
          }
 
+         case IMAGES : return{
+            ...state,
+            images: action.payload
+        }
+
          default: return state
          }
      }
+
 
 

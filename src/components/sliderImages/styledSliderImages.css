@@ -1,0 +1,36 @@
+.plans-container--slider{
+    display: flex;
+    gap: 15px;
+    height: 346px;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+}
+
+.plans-container--card{
+    
+    position: relative;
+    scroll-snap-align: center;
+    width: 100%;
+    min-width: 230px;
+    height: 300px;
+    border-radius: 5px;
+    margin: 17px; 
+
+}
+
+.plans-container--card img{
+    
+    position: relative;
+    scroll-snap-align: center;
+    width: 115%;
+    height:  310px;
+    min-width: 230px;
+    /* height: 250px; */
+    max-width: 400px;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}

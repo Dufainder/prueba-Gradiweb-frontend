@@ -1,0 +1,29 @@
+
+
+.main-container-title{
+
+
+    margin-top: 20px;
+    margin-left: 10px;
+    width: 100%;
+
+}
+
+
+
+.main-container-title h3{
+
+    margin-bottom: 2px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    line-height: 1.8rem;
+    color: #808080;
+}
+
+.main-container-title h2{
+    
+    font-size: 2.0rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    
+}
