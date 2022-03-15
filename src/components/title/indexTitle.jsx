@@ -11,6 +11,7 @@ export default function Title({title, price, comparate}) {
          <h2>{price} </h2><h3> $ {comparate} </h3>
       </div>
 
+          <hr/>
 
     </section>
   )
