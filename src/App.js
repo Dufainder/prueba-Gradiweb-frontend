@@ -9,6 +9,7 @@ import Title from './components/title/indexTitle';
 import ColorOption from './components/colorOption/indexcolor';
 import SizeOption from './components/sizeOption/indexSize';
 import Total from './components/totalPrice/indexTotal';
+import AddButtons from './components/addButtons/indexAddButtons';
 
 function App() {
 
@@ -49,8 +50,8 @@ function App() {
 
              <Total/>
 
+             <AddButtons/>
 
-        <section className='main-comprar'></section>
         <section className='main--buttons'></section>
         <section className='main-informacion'></section>
 
