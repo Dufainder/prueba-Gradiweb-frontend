@@ -8,6 +8,7 @@ import  SliderImages from './components/sliderImages/indexSliderImages.jsx'
 import Title from './components/title/indexTitle';
 import ColorOption from './components/colorOption/indexcolor';
 import SizeOption from './components/sizeOption/indexSize';
+import Total from './components/totalPrice/indexTotal';
 
 function App() {
 
@@ -38,16 +39,17 @@ function App() {
         <div className='main-marginInterno'>
 
 
-           <SliderImages imgs={producto}/>
+            <SliderImages imgs={producto}/>
 
-           <Title title={producto?.title} price={producto?.price} comparate={producto?.compare_at_price} />
+            <Title title={producto?.title} price={producto?.price} comparate={producto?.compare_at_price} />
     
-           <ColorOption/>
+            <ColorOption/>
             
             <SizeOption options={producto.options}/>
 
-            
-        <section className='main-sizeOpcion'></section>
+             <Total/>
+
+
         <section className='main-comprar'></section>
         <section className='main--buttons'></section>
         <section className='main-informacion'></section>
