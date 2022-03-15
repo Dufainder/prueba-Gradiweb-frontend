@@ -15,8 +15,10 @@
 
     margin-bottom: 2px;
     font-size: 1.1rem;
-    font-weight: 600;
-    line-height: 1.8rem;
+    font-weight: 300;
+    line-height: 1.0rem;
+    margin: 0;
+    padding: 0;
     color: #808080;
 }
 
@@ -27,3 +29,31 @@
     line-height: 2.6rem;
     
 }
+
+.container-precio {
+    
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+}
+
+
+.container-precio h2{
+
+    display: inline;
+    font-size: 1.5rem;
+    font-weight: bold;
+    line-height: 2.0rem;
+    text-decoration: none;
+    
+}
+
+.container-precio h3{
+    display: inline-block;
+    margin-top: 4px;
+    text-decoration: line-through;
+    display: inline;
+    vertical-align: text-bottom;
+}
+

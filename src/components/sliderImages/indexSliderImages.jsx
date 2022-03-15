@@ -13,9 +13,9 @@ export default function SliderImages({imgs}) {
     
 
         <section className="plans-container--slider">
-            {imgs.images? imgs.images.map(e=>(
+            {imgs.images? imgs.images.map( (e,i) =>(
             
-            <article className="plans-container--card">
+            <article key={i} className="plans-container--card">
                <img src={e} 
                alt="image1" />
             </article>
