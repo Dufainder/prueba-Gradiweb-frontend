@@ -45,17 +45,16 @@ function App() {
 
             <Title title={producto?.title} price={producto?.price} comparate={producto?.compare_at_price} />
     
-            <ColorOption/>
+            <ColorOption options={producto.options}/>
             
             <SizeOption options={producto.options}/>
 
-             <Total/>
+             <Total price={producto?.price}/>
 
              <AddButtons/>
 
              <Descripcion description={producto.description}/>
 
-        <section className='main-informacion'></section>
 
         </div>
     

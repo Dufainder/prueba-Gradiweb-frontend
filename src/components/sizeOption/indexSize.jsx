@@ -8,8 +8,6 @@ function SizeOption({options}) {
 
         options=options.filter(e=>(e.position === 2))
         options=options[0].values;
-        console.log(options, 'opciones')
-       
 
     }
 

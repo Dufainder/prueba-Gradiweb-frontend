@@ -5,6 +5,13 @@
 
 }
 
+.main-sizeoption-container h4{
+    position: relative;
+    top:10px;
+    color: gray;
+
+}
+
 .sizeoption-container{
     
     display: flex;
