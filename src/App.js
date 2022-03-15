@@ -10,6 +10,7 @@ import ColorOption from './components/colorOption/indexcolor';
 import SizeOption from './components/sizeOption/indexSize';
 import Total from './components/totalPrice/indexTotal';
 import AddButtons from './components/addButtons/indexAddButtons';
+import Descripcion from './components/descripcion/indexDescripcion';
 
 function App() {
 
@@ -52,7 +53,8 @@ function App() {
 
              <AddButtons/>
 
-        <section className='main--buttons'></section>
+             <Descripcion description={producto.description}/>
+
         <section className='main-informacion'></section>
 
         </div>

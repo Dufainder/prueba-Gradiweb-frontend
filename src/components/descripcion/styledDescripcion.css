@@ -1,0 +1,15 @@
+.main-descripcion-container div{
+    display: flex;
+    margin: 10px;
+    margin-top: 20px;
+  
+}
+
+.descripcion-container div{
+    width: 100%;
+}
+
+.main-descripcion-container p{
+    
+    color: gray;
+}
