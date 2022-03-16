@@ -1,36 +1,54 @@
 .plans-container--slider{
     display: flex;
     gap: 15px;
-    height: 346px;
-    overflow-x: scroll;
-    overscroll-behavior-x: contain;
-    scroll-snap-type: x proximity;
+    width: 100%;
+    max-width: 350px;
+    /* overflow-x: scroll;
+    overscroll-behavior-x: contain; */
+    margin-bottom: 0px;
+    margin: 0;
+    padding: 0%;
+
+    /* scroll-snap-type: x proximity; */
 }
 
 .plans-container--card{
     
-    position: relative;
-    scroll-snap-align: center;
+    /* position: relative; */
+    /* scroll-snap-align: center; */
     width: 100%;
     min-width: 230px;
-    height: 300px;
+    height: 350px;
     border-radius: 5px;
-    margin: 17px; 
+    /* margin: 17px;  */
+    margin-bottom: 0px;
 
 }
 
 .plans-container--card img{
     
-    position: relative;
-    scroll-snap-align: center;
+    /* position: relative; */
+    /* scroll-snap-align: center; */
     width: 115%;
     height:  310px;
     min-width: 230px;
     /* height: 250px; */
-    max-width: 400px;
+    /* max-width: 550px; */
     border-radius: 10px;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 
+}
+
+@media (min-width: 800px) {
+    
+
+    .plans-container--card img{
+        height:  800px;
+        }
+        .plans-container--slider{
+            gap:  30px;
+
+    }
 }

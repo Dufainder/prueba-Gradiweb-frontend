@@ -3,11 +3,18 @@
 .main-container-title{
 
 
-    margin-top: 20px;
+    margin-top: 50px;
     margin-left: 10px;
     width: 100%;
 
 }
+
+@media (min-width: 569px) {
+    .main-container-title{
+     margin-top: 10px;
+    }
+  }
+  
 
 
 

@@ -1,4 +1,5 @@
 import React from 'react';
+import IndexCarousel from '../carousel/indexCarousel';
 import './styledSliderImages.css'
 
 
@@ -11,9 +12,12 @@ export default function SliderImages({imgs}) {
   return (
     <>
     
-
-        <section className="plans-container--slider">
-            {imgs.images? imgs.images.map( (e,i) =>(
+             
+             <IndexCarousel imgs={imgs}/>
+          
+          
+          
+            {/* {imgs.images? imgs.images.map( (e,i) =>(
             
             <article key={i} className="plans-container--card">
                <img src={e} 
@@ -21,10 +25,9 @@ export default function SliderImages({imgs}) {
             </article>
               ))
             : 
-               <></>}
+               <></>} */}
             
-         </section>
-   
-    </>
+         </>
+  
   )
 }

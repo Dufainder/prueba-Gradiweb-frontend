@@ -30,18 +30,22 @@ function App() {
 
 
   return (
-    <div className='main-contenedor'>
-      <header>
+   
+    <>
+        <div className='main-contenedor'>
+     <header>
           <Navbar/>
       </header>
 
       
       <main>
 
-        <div className='main-marginInterno'>
 
+           
+          <SliderImages className={'slider-container'} imgs={producto}/>
+            
 
-            <SliderImages imgs={producto}/>
+            <div className='container-iaquierdo'>
 
             <Title title={producto?.title} price={producto?.price} comparate={producto?.compare_at_price} />
     
@@ -55,20 +59,14 @@ function App() {
 
              <Descripcion description={producto.description}/>
 
+            </div>
 
-        </div>
+          
     
-    
-
       </main>
 
-
-     <footer></footer>
-
-
-
-      
-    </div>
+          </div>
+   </>
   );
 }
 

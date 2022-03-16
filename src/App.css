@@ -35,18 +35,17 @@ header{
 }
 
 .main-contenedor{
-  display: flex;
   min-width: 320px;
   width: 100%;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  height: 300%;
+  margin-bottom: 17%;
 }
 
 main{
   /* position:sticky; */
   /* position: relative; */
   width: 100%;
+  height: 100vh;
   min-width: 320px;
 
   /* margin-left: 5px; */
@@ -54,17 +53,34 @@ main{
 
 }
 
-  .main-marginInterno{
+.main-marginInterno{
   min-width: 320 px;
   width: 100%;
 
   border: 5px solid black;
   border-bottom: 20px solid black;
   /* background-color: #282623; */
+   
 }
 
-.main-sliderImagenes{
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
+.slider-container{
+  max-width: 400px;
+  width: 200px;
+  height: 100vh;
 }
+
+.container-iaquierdo{
+   width: 100%;
+   height: 100%;
+}
+
+@media (min-width: 570px) {
+   main {
+    display:flex;
+    gap: 0;
+    margin: 0;
+    width: 100%;
+  }
+}
+
