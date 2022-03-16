@@ -1,5 +1,5 @@
 
-import React, {useEffect} from 'react';
+import React, {useEffect, useState} from 'react';
 import { getProduct } from './components/redux/actions';
 import { useDispatch, useSelector} from 'react-redux';
 import './App.css';
@@ -16,16 +16,25 @@ function App() {
 
   const dispatch = useDispatch();
   const producto = useSelector((state) => state.product)
-  
+  const inputCart = useSelector((state) => state.cart)
+
+
   
   useEffect(() => {
     dispatch(getProduct())
-    if(producto.data !== undefined){
-    }
-  },[])  
-  
-    console.log(producto, 'a ver');
 
+},[])  
+
+  //  const [inputCart, setInputCart] = useState({
+    
+  //    id:'',
+  //    title:'',
+  //    color:'',
+  //    size:'',
+  //    cantidad:'',
+  //    price:'' 
+
+  //       }) 
 
 
 
@@ -47,17 +56,22 @@ function App() {
 
             <div className='container-iaquierdo'>
 
-            <Title title={producto?.title} price={producto?.price} comparate={producto?.compare_at_price} />
+            <Title 
+                
+                title={producto?.title} 
+                price={producto?.price} 
+                comparate={producto?.compare_at_price} 
+                />
     
-            <ColorOption options={producto.options}/>
+            <ColorOption options={producto?.options}  inputCart={inputCart} />
             
-            <SizeOption options={producto.options}/>
+            <SizeOption options={producto?.options}   />
 
-             <Total price={producto?.price}/>
+             <Total price={producto?.price}   />
 
-             <AddButtons/>
+             <AddButtons producto={producto}  inputCart={inputCart} />
 
-             <Descripcion description={producto.description}/>
+             <Descripcion description={producto?.description}/>
 
             </div>
 

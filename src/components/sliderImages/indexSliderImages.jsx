@@ -5,7 +5,7 @@ import './styledSliderImages.css'
 
 export default function SliderImages({imgs}) {
     
-    if(imgs.images){
+    if(imgs){
         console.log(imgs, 'imgs')
     }
 

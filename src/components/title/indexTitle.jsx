@@ -1,7 +1,23 @@
-import React from 'react'
+import React, {useEffect} from 'react';
+import {putTitle} from '../redux/actions' 
+import { useDispatch} from 'react-redux';
 import './styledTitle.css'
 
 export default function Title({title, price, comparate}) {
+
+  const dispatch = useDispatch();
+
+
+  useEffect(() => {
+    if(title){
+
+      dispatch(putTitle(title))
+    }
+
+},[title])  
+
+
+
   return (
     <section className='main-container-title'>
       

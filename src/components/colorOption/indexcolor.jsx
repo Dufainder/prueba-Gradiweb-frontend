@@ -1,9 +1,11 @@
 import React from 'react'
+import { putColor } from '../redux/actions';
+import { useDispatch} from 'react-redux';
 import './styledcolor.css'
 
 const ColorOption = ({options}) => {
 
-
+    const dispatch=useDispatch()
 
     if(options){
 
@@ -14,6 +16,14 @@ const ColorOption = ({options}) => {
 
     }
 
+const handleColor = (evt) => {
+    
+    console.log(evt.target.value, 'valueColor')
+    dispatch(putColor(evt.target.value))
+        
+}
+
+
     return (
         <>
             <section className='main-coloroption-container'>
@@ -22,7 +32,7 @@ const ColorOption = ({options}) => {
 
                  {options? options.map((e,i)=>(
                         <>
-                        <input key={i} type="radio" name="radio" id={e.toLowerCase()==='red'? 'radio1':'radio2'} />
+                        <input key={i*100} type="radio" onChange={(evt)=>handleColor(evt)} checked={e === 'Red'? true:false} name="radio" value={e === 'Red'? e : e} id={e.toLowerCase()==='red'? 'radio1':'radio2'} />
                         <label key={e} for={e.toLowerCase()==='red'? 'radio1':'radio2'}></label>
                         </>
                         

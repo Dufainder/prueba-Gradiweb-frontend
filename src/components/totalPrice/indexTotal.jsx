@@ -1,10 +1,27 @@
-import React,{useState} from 'react'
+import React,{useState, useEffect} from 'react'
+import {putPrice, putCant} from '../redux/actions'
+import { useDispatch} from 'react-redux';
 import './styledTotal.css'
 // import InputSpinner from 'react-bootstrap-input-spinner'  
 
 function Total({price}) {
 
     const [cont, setCont] = useState(1);
+
+
+    const dispatch = useDispatch();
+
+    useEffect(() => {
+      if(price){
+         
+        let valor=price*cont;
+        dispatch(putPrice(valor))
+        dispatch(putCant(cont))
+      }
+  
+  },[price, cont])  
+
+ 
 
   return (
     

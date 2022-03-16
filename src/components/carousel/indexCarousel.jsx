@@ -21,7 +21,7 @@ function IndexCarousel({imgs}) {
     onChange={(e)=>(setCont(e))}
     className='cnatiner'
     >
-     {imgs.images? imgs.images.map( (e,i) =>(
+     {imgs?.images? imgs.images.map( (e,i) =>(
 
          
                <img className='ClassImagen' src={e} key={i} 
@@ -35,7 +35,7 @@ function IndexCarousel({imgs}) {
        
        <div className='indicador-container'>
 
-        {imgs.images? imgs.images.map( (e, i) =>(
+        {imgs?.images? imgs.images.map( (e, i) =>(
             
             <div key={i} className={cont===i? 'indicador-on':'indicador-off'}/>
             
@@ -48,7 +48,7 @@ function IndexCarousel({imgs}) {
  <div id='foot-images'>
 
  
- {imgs.images? imgs.images.map( (e,i) =>(
+ {imgs?.images? imgs.images.map( (e,i) =>(
    
       (i!==0?
       <div key={i+10} >

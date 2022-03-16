@@ -1,8 +1,11 @@
 import React from 'react';
+import {putSize} from '../redux/actions'
+import { useDispatch} from 'react-redux';
 import './styleSize.css';
 
 function SizeOption({options}) {
     
+  const dispatch = useDispatch();  
 
     if(options){
 
@@ -10,6 +13,17 @@ function SizeOption({options}) {
         options=options[0].values;
 
     }
+
+    const handleClick =(e)=>{
+
+        
+      dispatch(putSize(e))
+      
+ 
+
+
+    }
+
 
 
   return (
@@ -25,7 +39,14 @@ function SizeOption({options}) {
             {options? options.map((e,i)=>(
                         
        
-                <button className='sizeoption-button' key={i}>{e.toString()}</button>
+                <button className='sizeoption-button'
+                 key={i/9}
+                 onClick={()=>handleClick(e)}
+                 >
+                   
+                   {e.toString()}  
+                 
+                 </button>
             
             )) : <></>}
             

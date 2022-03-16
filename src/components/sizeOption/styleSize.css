@@ -15,8 +15,8 @@
 .sizeoption-container{
     
     display: flex;
-    gap: 15px;
-    width: 75%;
+    gap: 12px;
+    width: 90%;
     align-items: center;
     flex-wrap:wrap;
    
