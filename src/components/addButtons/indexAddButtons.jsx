@@ -18,13 +18,13 @@ const handleFavourite = ()=>{
     console.log(variante,'la variante')
      dispatch(putId(variante[0].id))
      console.log(inputCart, 'desde buttons cart')
-     dispatch(handleModalChange('favorite'))
+     dispatch(handleModalChange('favorites'))
    }
 
    else {
      
     dispatch(putId(producto.id))
-    dispatch(handleModalChange('favorite'))
+    dispatch(handleModalChange('favorites'))
    }
 
 }

@@ -40,7 +40,7 @@
 
 
 
-.plans-container--card h3{
+.plans-container--card-off h3{
     
     display: none;
     margin-bottom: 2px;
@@ -53,9 +53,27 @@
   
 }
 
+.plans-container--card-off p{
+    
+    display: none;
+}
+
 .plans-container--card p{
     
     display: none;
+}
+
+.plans-container--card h3{
+    
+    display: none;
+    margin-bottom: 2px;
+    font-size: 1.1rem;
+    font-weight: 300;
+    line-height: 1.0rem;
+    margin: 0;
+    padding: 0;
+    color: #808080;
+  
 }
 
 
@@ -207,19 +225,33 @@ li{
         }
         
         
-          .plans-container--card h3{
+          .plans-container--card-off h3{
               visibility: visible;
             display: inline;
             margin-left: 20px;
         
         }
     
-        .plans-container--card p{
+        .plans-container--card-off p{
             visibility: visible;
             display: inline;
     
             
         }
+
+        .plans-container--card h3{
+            visibility: visible;
+          display: inline;
+          margin-left: 20px;
+      
+      }
+  
+      .plans-container--card p{
+          visibility: visible;
+          display: inline;
+  
+          
+      }
 
         
         

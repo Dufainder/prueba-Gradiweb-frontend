@@ -23,7 +23,7 @@ export default function Title({title, price, comparate,images}) {
   return (
     <section className='main-container-title'>
       
-      <h3>by Nike x Alyx</h3>
+      <h3>by Nike x ALYX</h3>
       <h2>{title}</h2>
       <div className='container-precio'>
          <h2>{price/100}.00 </h2><h3> $ {comparate/100}.00 </h3>
