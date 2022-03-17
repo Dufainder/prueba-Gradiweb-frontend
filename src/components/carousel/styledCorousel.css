@@ -13,6 +13,24 @@
     
 }
 
+
+.plans-container--card h3{
+    
+    display: none;
+    margin-bottom: 2px;
+    font-size: 1.1rem;
+    font-weight: 300;
+    line-height: 1.0rem;
+    margin: 0;
+    padding: 0;
+    color: #808080;
+}
+
+.plans-container--card p{
+    
+    display: none;
+}
+
 .cnatiner{
     /* width: 92%;
     position: relative;
@@ -57,7 +75,7 @@
     /* margin-left: 10px; */
   }
 
-  @media (min-width: 800px) {
+  @media (min-width: 850px) {
     .cnatiner{
         margin-left:10px;
         margin-right:10px;
@@ -71,6 +89,10 @@
         margin-left:20px;
         max-width: 600px;
     }
+
+  
+
+
   }
 
 
@@ -202,6 +224,22 @@ li{
             min-width: 70px;
             visibility: visible;
           }
+
+
+          .plans-container--card h3{
+            visibility: visible;
+            display: inline;
+            margin-left: 20px;
+        }
+    
+        .plans-container--card p{
+            visibility: visible;
+            display: inline;
+           
+        }
+
+
+
         }
 
       

@@ -6,11 +6,13 @@ import "./styledCorousel.css"; // requires a loader
 function IndexCarousel({imgs}) {
 
     const [cont, setCont] = useState(0);
+    console.log(imgs, 'desde el carousel')
 
   return (
 
 <section className='plans-container--card'>
-
+      
+    <h3>Catalog / sneckers /</h3><p className='' > {imgs?.title}</p>  
     <Carousel 
     
     showArrows={true} 

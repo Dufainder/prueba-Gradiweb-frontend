@@ -11,8 +11,8 @@ export default function SliderImages({imgs}) {
 
   return (
     <>
-    
-             
+          
+            
              <IndexCarousel imgs={imgs}/>
           
           

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {putSize} from '../redux/actions'
 import { useDispatch} from 'react-redux';
 import './styleSize.css';
@@ -6,6 +6,7 @@ import './styleSize.css';
 function SizeOption({options}) {
     
   const dispatch = useDispatch();  
+  const [activate, setActivate]= useState(null)
 
     if(options){
 
@@ -14,10 +15,10 @@ function SizeOption({options}) {
 
     }
 
-    const handleClick =(e)=>{
+    const handleClick =(e,i)=>{
 
-        
-      dispatch(putSize(e))
+      setActivate(i)  
+      dispatch(putSize(e.toString()))
       
  
 
@@ -39,9 +40,9 @@ function SizeOption({options}) {
             {options? options.map((e,i)=>(
                         
        
-                <button className='sizeoption-button'
-                 key={i/9}
-                 onClick={()=>handleClick(e)}
+                <button className={i===activate? 'activate-size-button': 'desactive-size-button'}
+                 key={i*20}
+                 onClick={()=>handleClick(e,i)}
                  >
                    
                    {e.toString()}  
