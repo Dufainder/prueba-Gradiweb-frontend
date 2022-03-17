@@ -1,19 +1,24 @@
 import React from 'react';
+
 import IndexCarousel from '../carousel/indexCarousel';
+import { useDispatch} from 'react-redux';
 import './styledSliderImages.css'
 
 
-export default function SliderImages({imgs}) {
-    
-    if(imgs){
-        console.log(imgs, 'imgs')
+export default function SliderImages({imgs , modalState}) {
+      
+
+
+    if(imgs.images){
+        console.log(imgs.images, 'imgs')
+       
     }
 
   return (
     <>
           
             
-             <IndexCarousel imgs={imgs}/>
+             <IndexCarousel imgs={imgs}  modalState={modalState}/>
           
           
           

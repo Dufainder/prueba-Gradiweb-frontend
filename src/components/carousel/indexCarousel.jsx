@@ -3,14 +3,13 @@ import { Carousel } from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import "./styledCorousel.css"; // requires a loader
 
-function IndexCarousel({imgs}) {
+function IndexCarousel({imgs, modalState}) {
 
     const [cont, setCont] = useState(0);
-    console.log(imgs, 'desde el carousel')
 
   return (
 
-<section className='plans-container--card'>
+<section className={modalState===''?  'plans-container--card-off' : 'plans-container--card' }>
       
     <h3>Catalog / sneckers /</h3><p className='' > {imgs?.title}</p>  
     <Carousel 
@@ -21,6 +20,7 @@ function IndexCarousel({imgs}) {
     showStatus={false}
     width={'100%'}
     onChange={(e)=>(setCont(e))}
+    id='cnatiner'
     className='cnatiner'
     >
      {imgs?.images? imgs.images.map( (e,i) =>(

@@ -1,4 +1,4 @@
-import { CANT, COLOR, ID, PRICE, PRODUCT, SIZE, TITLE} from "./types";
+import { CANT, COLOR, ID, IMAGE, MODAL, PRICE, PRODUCT, SIZE, TITLE} from "./types";
 import axios from "axios";
 
 const url = 'https://graditest-store.myshopify.com/products/free-trainer-3-mmw.js'
@@ -99,6 +99,35 @@ export const putId = (id)=>{
             return dispatch ({
                  type: ID,
                  payload: id
+                 
+            })    
+
+    } 
+
+} 
+
+export const putImage = (url)=>{
+    
+    return (dispatch) => {
+          
+            return dispatch ({
+                 type: IMAGE,
+                 payload: url
+                 
+            })    
+
+    } 
+
+} 
+
+
+export const handleModalChange = (e)=>{
+    
+    return (dispatch) => {
+          
+            return dispatch ({
+                 type: MODAL,
+                 payload: e
                  
             })    
 

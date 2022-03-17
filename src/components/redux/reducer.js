@@ -1,9 +1,10 @@
-import {  CANT, COLOR, ID, PRICE, PRODUCT, SIZE, TITLE } from "./types";
+import {  CANT, COLOR, ID, IMAGE, MODAL, PRICE, PRODUCT, SIZE, TITLE } from "./types";
 
 
 const initialState={
 
     product:[],
+    modal:'',
     cart:{
         
         id:'',
@@ -11,6 +12,7 @@ const initialState={
         color:'',
         size:'',
         cant:'',
+        image:'',
         price:'' 
 
     }
@@ -92,6 +94,28 @@ export const Reducer = (state=initialState, action) =>{
        'id' : action.payload}
             
    }
+
+
+
+   case IMAGE : 
+   console.log(state.cart)
+
+   return{
+       ...state,
+       cart:{
+           ...state.cart,  
+      'image' : action.payload}
+           
+  }
+
+
+  case MODAL : 
+  return{
+
+    ...state,
+    modal: action.payload    
+          
+ }
 
 
 

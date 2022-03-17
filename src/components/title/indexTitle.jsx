@@ -1,9 +1,9 @@
 import React, {useEffect} from 'react';
-import {putTitle} from '../redux/actions' 
+import {putTitle, putImage} from '../redux/actions' 
 import { useDispatch} from 'react-redux';
 import './styledTitle.css'
 
-export default function Title({title, price, comparate}) {
+export default function Title({title, price, comparate,images}) {
 
   const dispatch = useDispatch();
 
@@ -11,6 +11,8 @@ export default function Title({title, price, comparate}) {
   useEffect(() => {
     if(title){
 
+      let imagen = images[0]
+      dispatch(putImage(imagen))
       dispatch(putTitle(title))
     }
 

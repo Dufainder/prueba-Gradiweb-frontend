@@ -1,6 +1,6 @@
 
 import React, {useEffect, useState} from 'react';
-import { getProduct } from './components/redux/actions';
+import { getProduct, handleModalChange } from './components/redux/actions';
 import { useDispatch, useSelector} from 'react-redux';
 import './App.css';
 import Navbar from './components/navbar/Navbar';
@@ -16,6 +16,8 @@ import Modal from './components/modal/indexModal';
 function App() {
 
   const dispatch = useDispatch();
+
+  const modalState = useSelector((state) => state.modal)
   const producto = useSelector((state) => state.product)
   const inputCart = useSelector((state) => state.cart)
 
@@ -36,20 +38,25 @@ function App() {
      <header>
           <Navbar/>
       </header>
+        {modalState===''?
         
-        <Modal inputCart={inputCart}/>
+        <></>
+        :
+        <Modal inputCart={inputCart} 
+         modalState={modalState}/>
+     }
       
       <main>
 
 
            
-          <SliderImages className={'slider-container'} imgs={producto}/>
+          <SliderImages className={'slider-container'} imgs={producto}  modalState={modalState}/>
             
 
             <div className='container-iaquierdo'>
 
             <Title 
-                
+                images={producto?.images}
                 title={producto?.title} 
                 price={producto?.price} 
                 comparate={producto?.compare_at_price} 
@@ -61,7 +68,7 @@ function App() {
 
              <Total price={producto?.price}   />
 
-             <AddButtons producto={producto}  inputCart={inputCart} />
+             <AddButtons producto={producto}   inputCart={inputCart} />
 
              <Descripcion description={producto?.description}/>
 

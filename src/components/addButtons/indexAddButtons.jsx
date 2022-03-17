@@ -1,10 +1,10 @@
 import React,{useState, useEffect} from 'react';
-import {putId} from '../redux/actions';
+import {putId, handleModalChange} from '../redux/actions';
 import { useDispatch} from 'react-redux';
 import './styledAddButtons.css';
 
 
-export default function AddButtons({producto, inputCart}) {
+export default function AddButtons({producto, inputCart, setHandleModal}) {
 
 const dispatch=useDispatch()
 
@@ -18,11 +18,13 @@ const handleFavourite = ()=>{
     console.log(variante,'la variante')
      dispatch(putId(variante[0].id))
      console.log(inputCart, 'desde buttons cart')
+     dispatch(handleModalChange('favorite'))
    }
 
    else {
-
+     
     dispatch(putId(producto.id))
+    dispatch(handleModalChange('favorite'))
    }
 
 }
@@ -40,11 +42,14 @@ const handleCart = ()=>{
    console.log(variante,'la variante')
     dispatch(putId(variante[0].id))
     console.log(inputCart, 'desde buttons cart')
+    dispatch(handleModalChange('cart'))
   }
 
   else {
 
     dispatch(putId(producto.id))
+    dispatch(handleModalChange('cart'))
+  
    }
 
 
