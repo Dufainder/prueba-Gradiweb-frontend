@@ -1,0 +1,42 @@
+.modal-overlay{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top:0;
+    left:0;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0,0,0, .5);
+}
+
+
+.modal-container{
+    width: 500px;
+    height: 25%;
+    background-color: snow;
+    position: absolute;
+    border-radius: 5px;
+    box-shadow: rgba(100,100,111, 0.2) 0px 7px 29px 8px;
+    padding: 20px;
+    z-index: 100;
+}
+
+.modal-title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #E8E8E8;
+
+}
+
+
+.modal-title h3{
+    font-weight: 500px;
+    font-size: 16px;
+    color:black
+
+}

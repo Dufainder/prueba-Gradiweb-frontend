@@ -11,6 +11,7 @@ import SizeOption from './components/sizeOption/indexSize';
 import Total from './components/totalPrice/indexTotal';
 import AddButtons from './components/addButtons/indexAddButtons';
 import Descripcion from './components/descripcion/indexDescripcion';
+import Modal from './components/modal/indexModal';
 
 function App() {
 
@@ -25,16 +26,6 @@ function App() {
 
 },[])  
 
-  //  const [inputCart, setInputCart] = useState({
-    
-  //    id:'',
-  //    title:'',
-  //    color:'',
-  //    size:'',
-  //    cantidad:'',
-  //    price:'' 
-
-  //       }) 
 
 
 
@@ -45,7 +36,8 @@ function App() {
      <header>
           <Navbar/>
       </header>
-
+        
+        <Modal inputCart={inputCart}/>
       
       <main>
 
