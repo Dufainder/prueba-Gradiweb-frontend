@@ -13,4 +13,6 @@
 .main-descripcion-container p{
     
     color: gray;
+    font-weight: bold;
+    font-family: 'Quicksand', sans-serif;
 }

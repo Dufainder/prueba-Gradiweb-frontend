@@ -59,7 +59,7 @@ const handleCart = ()=>{
   return (
     <section className='main-addButtons-container'>
         
-        <div className='add-Buttons-favourite' onClick={()=>handleFavourite()} >Add to favourite</div>
+        <div className='add-Buttons-favourite' onClick={()=>handleFavourite()} >Add to favorite</div>
         <div className='add-Buttons-cart' onClick={()=>handleCart()}>Add to cart</div>
        
     </section>

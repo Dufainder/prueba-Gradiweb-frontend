@@ -48,12 +48,15 @@
     display: inline;
     font-size: 14px;
     color: gray;
+    font-family: 'Quicksand', sans-serif;
    
 }
 
 .precio-container p{
     font-size: 14px;
     display: inline;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
   
    
    

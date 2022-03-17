@@ -10,7 +10,9 @@
 }
 
 .main-addButtons-container div{
- 
+    
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
     height: 45px;
     width: 100%;
     display: flex;
