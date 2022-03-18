@@ -1,70 +1,23 @@
-# Getting Started with Create React App
+# Un placer Saludarlos, espero se encuentren muy bien. !!!
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Quiero empezar haciendo una descripcion del proyecto en general seguido de las tecnologias que se implementaron  y por ultimo un autofeedBack y el criterio de descicion usado para los distintos compoenetes del proyecto
 
-## Available Scripts
+-*Este proyecto es totalmente responsive la calidad se adpata a todas las pantallas cumpliendo las 3 vistas requeriadas en la prueba y una adicional para pantallas muy grandes para no perder mucha calidad de imagen ademas de que se ve genial. Fue probado en mas de 20 formatos de pantalla para dispositivos moviles entre ellos las gamas mas importantes de Samsung, Iphone, Xiami etc.. 
 
-In the project directory, you can run:
 
-### `npm start`
+-*Este proyecto es una vista profesional de un producto de un Ecommerce,  cumple con funciones como un carrusel de Imagenes, un titulo y descripcion del 
+del producto, un formulario controlado para escoger las variantes del producto y botones de añadir al carrito y a favoritos cada uno desplegando un mensaje respectivamente
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+-*Para usar este  proyecto en entorno de desarrollador debes clonarlo o descargarlo y en la raiz de la carpeta origen del proyecto ejecutar 
+  
+  npm install     para instalar las dependencias 
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+--**decidi agrgar margenes de controno del celular tal como esta en la prueba, lo vi como mas desafiante y lo fue jajja
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<h1> Tecnologias Usadas </h1>
+ 
+ Se Implemento la trilogia que son HTML,CSS, JAVASCRIPT  seguido de la libreria REACT.js para la eestructura del proyecto debido a su comodo lenguaje de lectura y simplicidad en crear componentes, ademas se uso Frameworks como REDUX, REACT-REDUX, para mantener estados globales de la aolicacion desde APP y darle independencia total a los componentes en caso de manteniemiento o modificacion. Se uso AXIOS para  las peticiones a la API, usando FETCH y CATHC el async await no lo vi necesario no habia muchas peticiones que hacer o complejas promesas, en este caso su lectura es sencilla. Debido a que los requerimientos minimos era la trinidad decidi escoger el camino de CSS puro para mostrar mis habiliddes, porquedebido a que use react puede haber usado styled-componets para los estilos. El pilar de todo esto fue NODE.JS
+ 
+ 
+ 
