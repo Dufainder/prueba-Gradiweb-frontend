@@ -55,7 +55,13 @@ function App() {
 
 
            
-          <SliderImages className={'slider-container'} imgs={producto}  modalState={modalState}/>
+          <SliderImages 
+           
+             className={'slider-container'} 
+             imgs={producto} 
+             modalState={modalState} 
+             inputCart={inputCart} 
+          />
             
 
             <div className='container-iaquierdo'>

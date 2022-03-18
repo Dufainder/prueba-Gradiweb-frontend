@@ -26,6 +26,7 @@
     background-color: rgb(230, 230, 230);
     width: 100%;
     color: black;
+    font-weight: bold;
 }
 
 .add-Buttons-favourite:hover{
@@ -37,6 +38,7 @@
     width: 100%;
     background-color: black;
     color: white;
+    font-weight: bold;
    
 }
 
