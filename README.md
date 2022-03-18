@@ -24,11 +24,13 @@ del producto, un formulario controlado para escoger las variantes del producto y
  
  Sigiendo las sintaxis estandar de HTML el mi cuerpo de trabajo consta del header,main y footer. el header y el footer consta ded tal <nav> con su color  correspondiente. El main consta de dos secciones (siguiendo los estandares de html) el carrusel de imagenes y el contenedor de toda la informacion. pero  hay un componente desactivado que abarca todo el main que el moadal.  
 
-  Las Secciones del contenedor de la informacion son: 
-             Title  
-             ColorOption
-             SizeOption
-             Total
-             AddButtons
-             Descripcion
+  Las Secciones del contenedor de la informacion son:  Title, ColorOption, SizeOption ,Total, AddButton, Descripcion.
+  
+  Respecto al formulario este esta contralado, primero el color por defecto seleccionado al recargar la pagina es rojo, y tiene opcion para color negro debido a que en la informacion de la API solo sine variante negra, los inputs se ajustan segun el color de la variante, para mostrar mas colores se crean las clases en css correspondiente al color que propoercione la API y solo se puede seleccionar un color. La opcionde talla viene desactivada y el usuario puede escojer solo una talla. Esta el input de escoger la cantidad de articulos este nunca es menor a uno ese su valor limite, y cuando se actualiza la cantidad el precio total tambien se actualiza. Los botones de añadir al carrito y a favoritos funcionan y despliegan un modal con titulo e icono correspondiente al button que lo invoca, estos modales muestran el id del articulo si es una variante especifica con talla el modal muestra el id especifico de producto con color y talla enn especifico, en caso de no tener talla muestra el id general del producto.
+  
+  
+  --**Al seleccional el color negro no cambian las imagenes debido a que la API en metodo get no viene color negro, pero esto no es complejo de implementar es una funcion y condicion para cambiar las url de las imagenes dependiendo del color y listo. !!!!
+
+ <H2> Todo fue hecho ha consiencia y con honestidad, consulatas en internet para acordarme de ciertas cosas y ya<!H2>
+  
   
