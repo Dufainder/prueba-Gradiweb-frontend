@@ -1,6 +1,6 @@
 
-import React, {useEffect, useState} from 'react';
-import { getProduct, handleModalChange } from './components/redux/actions';
+import React, {useEffect} from 'react';
+import { getProduct} from './components/redux/actions';
 import { useDispatch, useSelector} from 'react-redux';
 import './App.css';
 import Navbar from './components/navbar/Navbar';
@@ -12,6 +12,7 @@ import Total from './components/totalPrice/indexTotal';
 import AddButtons from './components/addButtons/indexAddButtons';
 import Descripcion from './components/descripcion/indexDescripcion';
 import Modal from './components/modal/indexModal';
+import Footer from './components/footer/indexFooter';
 
 function App() {
 
@@ -83,6 +84,8 @@ function App() {
       </main>
 
           </div>
+
+     <Footer></Footer> 
    </>
   );
 }

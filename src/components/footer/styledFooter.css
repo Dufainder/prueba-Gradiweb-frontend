@@ -1,0 +1,15 @@
+.foot-nav-container{
+   
+        width: 100%;
+        position: relative;
+        margin: 0;
+        top:0;
+        min-width: 320px;
+        height: 50px;
+      
+       
+          /* position: sticky; */
+        background: black;
+       
+    
+}
