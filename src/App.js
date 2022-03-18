@@ -34,10 +34,14 @@ function App() {
   return (
    
     <>
-        <div className='main-contenedor'>
+
+
      <header>
           <Navbar/>
       </header>
+
+  <div className='main-contenedor'>
+
         {modalState===''?
         
         <></>
