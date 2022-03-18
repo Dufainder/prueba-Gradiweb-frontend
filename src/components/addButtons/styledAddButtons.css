@@ -28,8 +28,21 @@
     color: black;
 }
 
+.add-Buttons-favourite:hover{
+    cursor: pointer;
+    box-shadow: rgba(100,100,111, 0.2) 0px 0px 2px 2px;
+}
+
 .add-Buttons-cart{
     width: 100%;
     background-color: black;
     color: white;
+   
+}
+
+.add-Buttons-cart:hover{
+    
+    padding: 5px;
+    cursor: pointer;
+    box-shadow: rgba(32, 32, 37, 0.774) 0px 0px 2px 2px;
 }

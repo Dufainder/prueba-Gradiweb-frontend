@@ -41,6 +41,7 @@
     padding: 5px;
     width: 35px;
     height: 35px;
+    border-radius: 2px;
 
 
 }
@@ -58,6 +59,7 @@
     padding: 5px;
     width: 35px;
     height: 35px;
+    border-radius: 2px;
 
 
 } 
@@ -65,18 +67,19 @@
 
 .desactive-size-button:hover{
     
-    border: 1px solid black;
+    border: 0.15rem solid black;
     color:black;
+    cursor:pointer;
 }
 .desactive-size-button:active {
-    border: 1px solid black;
+    border: 0.15rem solid black;
     color:black; 
 }
 
 .desactive-size-button:focus{
     
     
-    border: 1px solid black;
+    border: 0.15rem solid black;
     color:black;    
 }
 
