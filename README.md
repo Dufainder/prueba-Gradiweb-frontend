@@ -31,6 +31,6 @@ del producto, un formulario controlado para escoger las variantes del producto y
   
   --**Al seleccional el color negro no cambian las imagenes debido a que la API en metodo get no viene color negro, pero esto no es complejo de implementar es una funcion y condicion para cambiar las url de las imagenes dependiendo del color y listo. !!!!
 
- <H2> Todo fue hecho ha consiencia y con honestidad, consulatas en internet para acordarme de ciertas cosas y ya<!H2>
+ <H4> Todo fue hecho ha consiencia y con honestidad, consulatas en internet para acordarme de ciertas cosas, lo normal en desarrollo ajja. <!H4>
   
   
