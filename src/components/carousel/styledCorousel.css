@@ -1,6 +1,6 @@
 .plans-container--card{  
     /* scroll-snap-align: center; */
-    width: 100%;
+    width: 99%;
     min-width: 230px;
     max-width: 300px;
     margin-left: 7%;
@@ -16,11 +16,11 @@
 
 .plans-container--card-off{  
     /* scroll-snap-align: center; */
-    width: 100%;
+    width: 99%;
     min-width: 230px;
-    max-width: 300px;
-    margin-left: 7%;
-    margin-right: 7%; 
+    margin-top: 50px;
+    margin-left: 2%;
+    margin-right: 10%; 
     max-width: 100%;
     border-radius: 5px;
     margin: 0;
@@ -30,14 +30,6 @@
  
 
 }
-
-#cnatiner{
-    /* margin-left: 10px; */
-  
-
-   
-}
-
 
 
 .plans-container--card-off h3{
@@ -94,20 +86,22 @@
       /* width: 530px; */
 
       /* height:  310px; */
-      max-width: 700px;
+      max-width: 900px;
       margin-top: 10px;
       min-width: 230px;
+      max-height: 900px;
     /* height: 250px; */
     border-radius: 5px;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    margin-left: 5px;
 
   
       
 }
 
-.carousel carousel-slider{
+/* .carousel carousel-slider{
     width: 100px;
   
 }
@@ -120,7 +114,7 @@ ul{
 li{
     
     margin: 10px; 
-}
+} */
 
 .indicador-container{
    
@@ -160,9 +154,9 @@ li{
     display: flex;
     justify-content: space-around;
     width:100%;
-     gap: 10px;
+     gap: 7px;
     margin-top: 15px;;
-    margin-right: 15%;
+    /* margin-right: 10%; */
     margin-bottom: 20px;
 }
 
@@ -173,53 +167,103 @@ li{
 
 
 
-@media (max-width: 569px) {
-    
+/* Seccion de responsive las mediaquerys */
+
+
+
+
+@media (max-width: 570px) {
+    .cnatiner{
+        /* margin-left: calc(40% - 30px); */
+        margin-left: 10px;
+        width: 95%; 
+        /* margin: 0%; */
+        
+    }
+
+
     .indicador-container{
         /* margin-left: calc(50% - 50px); */
             width: 100%;
-        
-        }
-  }
+           
+}
+    
 
+
+
+  /* ////////////////////////////////////////// */
+
+
+
+  
+  
   @media (max-width: 440px) {
       
       .indicador-container{
-        /* margin-left: calc(50% - 150px); */
-        max-width: 440px;
-        min-width: 320px;
-    
+          /* margin-left: calc(50% - 150px); */
+          max-width: 440px;
+          min-width: 320px;
+          
+          
+        }
+        .cnatiner{
+            /* margin-left: 10px; */
+            margin-left:10px;
+            width: 95%;
+      
+           
+        }
     }
-}
+    
+    
+ 
+    
 
-@media (min-width: 569px) {
+    /* ///////////////////// */
     
-    
-    .ClassImagen{
-        max-width: 600px;
-        height:  610px;
-    
-       
-    }
-}
+    @media (min-width: 570px) {
+        
+        
+        .ClassImagen{
+            max-width: 600px;
+            height:  290px;
+            
+            
+        }
 
-
-@media (min-width: 800px) {
-    
+        .cnatiner{
+            margin-left:10px;
+      
+            max-width: 600px;
+      
+      
+            /* margin-left: 10px; */
+        }
         .indicador-container{
             /* margin-left: calc(50% - 150px); */
             display: none;
             
             max-width: 440px;
             min-width: 320px;
-
+        
         }
+    }
+}
+
+
+    
+/* ///////////////////////////// */
+
+
+@media (min-width: 850px) {
+    
 
         #foot-images-img{
             
-            width: 100%;
-            height: 170px;
+            width: 90%;
+            height: 90%;
             min-width: 70px;
+            margin-left:  12px;
             visibility: visible;
         
         }
@@ -245,88 +289,107 @@ li{
           margin-left: 20px;
       
       }
-  
-      .plans-container--card p{
-          visibility: visible;
-          display: inline;
-  
+
+      .indicador-container{
+    
+        display: none;  
+          
+      } 
+      
+    }
+
+
+    @media (min-width: 850px) {
+      .cnatiner{
+          margin-left:10px;
+          margin-right:10px;
+        
+          
           
       }
+      
+      .plans-container--card-off{
+          width: 100%;
+          margin-top: 15px;
+          margin-right:15px;
+          margin-left:20px;
+          /* max-width: 900px; */
+      
+        
+      }
 
+      /* .ClassImagen{
+        max-width: 600px;
+        height:  610px;
+    
+       
+    } */
+    
+    /* .plans-container--card-off{  
+       
+        height: 900px;
+    
+    } */
+
+    .ClassImagen{
+        max-width: 600px;
+        height:  750px;
+        margin-left: 10 ;
         
         
     }
     
     
+    .plans-container--card p{
+        visibility: visible;
+        display: inline;
+
+        
+     }
+
+     .indicador-container{
+    
+        display: none;  
+          
+      } 
+    }
+
+
+    
+    /* ////////////////////////////////// */
     
     
-    @media (max-width: 800px) {
+    @media (max-width: 850px) {
         
         .indicador-container{
-            /* margin-left: calc(50% - 150px); */
-            visibility: visible;
+          /* margin-left: calc(50% - 150px); 
+          /* display: none;  */
             
             max-width: 440px;
-            min-width: 320px;
+            min-width: 320px; 
         
+        } 
+        
+        .ClassImagen{
+            max-width: 1000px;
+            height:  290px;
+            margin-left: 10px;
+        
+           
         }
-        
+
+
       #foot-images{
           
           display: none;
           
         }
+
+
+
     }  
     
-        @media (max-width: 570px) {
-          .cnatiner{
-              /* margin-left: calc(40% - 30px); */
-              margin-left: 10px;
-              width: 95%; 
-              /* margin: 0%; */
-        
-          }
-        }
-        
-        
-        @media (max-width: 440px) {
-          .cnatiner{
-              /* margin-left: 10px; */
-              margin-left:10px;
-              width: 95%;
-    
-             
-          }
-        }
-        
-        @media (min-width: 570px) {
-          .cnatiner{
-              margin-left:10px;
-        
-              max-width: 600px;
-        
-          }
-          /* margin-left: 10px; */
-        }
-        
-        @media (min-width: 850px) {
-          .cnatiner{
-              margin-left:10px;
-              margin-right:10px;
-              max-width: 600px;
-              
-          }
-          
-          .plans-container--card{
-              width: 100%;
-              margin-top: 5px;
-              margin-right:15px;
-              margin-left:20px;
-              max-width: 600px;
-            
-          }
+
         
         
         
-        
-        }

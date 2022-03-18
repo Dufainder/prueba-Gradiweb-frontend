@@ -26,7 +26,7 @@ export default function Title({title, price, comparate,images}) {
       <h3>by Nike x ALYX</h3>
       <h2>{title}</h2>
       <div className='container-precio'>
-         <h2>{price/100}.00 </h2><h3> $ {comparate/100}.00 </h3>
+         <h2>$ {price/100}.00 </h2><h3> $ {comparate/100}.00 </h3>
       </div>
 
           <hr/>

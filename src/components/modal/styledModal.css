@@ -26,6 +26,7 @@
     box-shadow: rgba(100,100,111, 0.2) 0px 7px 29px 8px;
     padding: 20px;
     z-index: 100;
+    font-family: 'Quicksand', sans-serif;
 }
 
 .modal-title{
@@ -69,6 +70,22 @@
     line-height: 1.7rem;
 }
 
+.modal-cerrar-button{
+    width: 30px;
+    height: 30px;
+    margin: 0;
+    border-radius: 50%;
+    color: white;
+    text-decoration: none;
+    border:none;
+    background-color: black;
+}
+
+.modal-cerrar-button:hover{
+ cursor: pointer;
+ color: red;
+ box-shadow: rgba(100,100,111, 0.2) 0px 3px 3px 3px;
+}
 
 
 

@@ -33,11 +33,11 @@ export default function Modal({inputCart, modalState}) {
 
                   <div className='modal-container-information'>
                     <h2> {inputCart.title}</h2>
-                    <h2>Color: {inputCart.color}</h2>
+                    <h2>Color :   {inputCart.color}</h2>
                     <h2> {inputCart.size !== ''? 'Size:':''} {inputCart.size}</h2>
-                    <h2>Cant: {inputCart.cant}</h2>
-                    <h2>Price: $ {inputCart.price/100}</h2>
-                    <p>id: {inputCart.id}</p>
+                    <h2>Cant :   {inputCart.cant}</h2>
+                    <h2>Price : $   {inputCart.price/100}</h2>
+                    <p>id :   {inputCart.id}</p>
                   </div>
 
               </div>

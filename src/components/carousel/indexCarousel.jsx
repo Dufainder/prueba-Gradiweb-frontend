@@ -11,7 +11,7 @@ function IndexCarousel({imgs, modalState}) {
 
 <section className={modalState===''?  'plans-container--card-off' : 'plans-container--card' }>
       
-    <h3>Catalog / sneckers /</h3><p className='' > {imgs?.title}</p>  
+    <h3>Catalog / sneckers /</h3><p> {imgs?.title}</p>  
     <Carousel 
     
     showArrows={true} 
