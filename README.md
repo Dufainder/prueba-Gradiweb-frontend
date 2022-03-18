@@ -25,10 +25,10 @@ del producto, un formulario controlado para escoger las variantes del producto y
  Sigiendo las sintaxis estandar de HTML el mi cuerpo de trabajo consta del header,main y footer. el header y el footer consta ded tal <nav> con su color  correspondiente. El main consta de dos secciones (siguiendo los estandares de html) el carrusel de imagenes y el contenedor de toda la informacion. pero  hay un componente desactivado que abarca todo el main que el moadal.  
 
   Las Secciones del contenedor de la informacion son: 
-             <Title/>    
-             <ColorOption/>
-             <SizeOption/>
-             <Total/>
-             <AddButtons/>
-             <Descripcion/>
+             Title  
+             ColorOption
+             SizeOption
+             Total
+             AddButtons
+             Descripcion
   
