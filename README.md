@@ -15,9 +15,20 @@ del producto, un formulario controlado para escoger las variantes del producto y
 --**decidi agrgar margenes de controno del celular tal como esta en la prueba, lo vi como mas desafiante y lo fue jajja
 
 
-<h1> Tecnologias Usadas </h1>
+<h2> Tecnologias Usadas </h2>
  
  Se Implemento la trilogia que son HTML,CSS, JAVASCRIPT  seguido de la libreria REACT.js para la eestructura del proyecto debido a su comodo lenguaje de lectura y simplicidad en crear componentes, ademas se uso Frameworks como REDUX, REACT-REDUX, para mantener estados globales de la aolicacion desde APP y darle independencia total a los componentes en caso de manteniemiento o modificacion. Se uso AXIOS para  las peticiones a la API, usando FETCH y CATHC el async await no lo vi necesario no habia muchas peticiones que hacer o complejas promesas, en este caso su lectura es sencilla. Debido a que los requerimientos minimos era la trinidad decidi escoger el camino de CSS puro para mostrar mis habiliddes, porquedebido a que use react puede haber usado styled-componets para los estilos. El pilar de todo esto fue NODE.JS
  
  
+ <h2> Descripcion de componentes </h2>
  
+ Sigiendo las sintaxis estandar de HTML el mi cuerpo de trabajo consta del header,main y footer. el header y el footer consta ded tal <nav> con su color  correspondiente. El main consta de dos secciones (siguiendo los estandares de html) el carrusel de imagenes y el contenedor de toda la informacion. pero  hay un componente desactivado que abarca todo el main que el moadal.  
+
+  Las Secciones del contenedor de la informacion son: 
+             <Title/>    
+             <ColorOption/>
+             <SizeOption/>
+             <Total/>
+             <AddButtons/>
+             <Descripcion/>
+  
