@@ -53,7 +53,7 @@
     align-items: center;
     background-color: white;
     justify-content: center;
-    border: 1px solid black;
+    border: 2px solid black;
     color:black;
     font-size: 12px;
     padding: 5px;
@@ -67,19 +67,19 @@
 
 .desactive-size-button:hover{
     
-    border: 0.15rem solid black;
+    border: 0.20rem solid black;
     color:black;
     cursor:pointer;
 }
 .desactive-size-button:active {
-    border: 0.15rem solid black;
+    border: 0.20rem solid black;
     color:black; 
 }
 
 .desactive-size-button:focus{
     
     
-    border: 0.15rem solid black;
+    border: 0.20rem solid black;
     color:black;    
 }
 
