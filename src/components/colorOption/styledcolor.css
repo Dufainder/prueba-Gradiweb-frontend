@@ -17,6 +17,7 @@
 
 }
 
+
 #radio1  {
   display: none;
 }
@@ -32,6 +33,7 @@
   background-clip: content-box;
   background-color: red;
   border-radius: 50%;
+  cursor: pointer;
 }
 
 #radio1:checked + label:before  {
@@ -55,6 +57,7 @@
   background-clip: content-box;
   background-color: black;
   border-radius: 50%;
+  cursor: pointer;
 }
 
 #radio2:checked + label:before  {

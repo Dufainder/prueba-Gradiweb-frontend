@@ -36,18 +36,24 @@
     
     display: none;
     margin-bottom: 2px;
-    font-size: 1.1rem;
+    font-size: 0.8rem;
     font-weight: 300;
     line-height: 1.0rem;
-    margin: 0;
     padding: 0;
     color: #808080;
+    font-family: 'Quicksand', sans-serif;
   
 }
 
+
+
+
 .plans-container--card-off p{
     
+    font-weight: bold;
+    font-size: 0.9rem;
     display: none;
+    font-family: 'Quicksand', sans-serif;
 }
 
 .plans-container--card p{
@@ -267,12 +273,21 @@ li{
             visibility: visible;
         
         }
+
+        .carrusel-title{
+
+            padding: 0;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        
+        }
         
         
-          .plans-container--card-off h3{
-              visibility: visible;
+        .plans-container--card-off .carrusel-title h3{
+            visibility: visible;
             display: inline;
             margin-left: 20px;
+            margin-top: 10px;
         
         }
     
