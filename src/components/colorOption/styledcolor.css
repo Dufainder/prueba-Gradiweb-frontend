@@ -6,6 +6,7 @@
   width: 100%;
   margin-bottom: 20px;
   margin-left: 10px;
+  margin-right: 0;
 
 }
 
@@ -100,6 +101,7 @@ label {
     height: 2px;
     margin-left: 10px;
     margin-bottom: 20px;
+    margin-right: 0;
     background-color:#80808036;
   
 }
