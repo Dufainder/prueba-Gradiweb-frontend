@@ -1,4 +1,5 @@
 import React from 'react'
+
 import { handleModalChange } from '../redux/actions'
 import { useDispatch} from 'react-redux';
 import './styledModal.css'
@@ -22,7 +23,9 @@ export default function Modal({inputCart, modalState}) {
               
               <div className='modal-container'>
                 <div className='modal-title'>
-                  <h3>Added to {modalState}</h3>
+                  <div>
+                  <h3>Added to {modalState}</h3><span className={modalState==='cart'? 'modal-icon-cart':'modal-icon-favorite' }></span>
+                  </div>
                    <button className='modal-cerrar-button' onClick={()=>handleClose()}>
                   X</button>
                 </div>

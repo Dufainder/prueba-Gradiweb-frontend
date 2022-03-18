@@ -37,6 +37,12 @@
     padding-bottom: 20px;
     border-bottom: 1px solid #E8E8E8;
 
+}.modal-title div{
+    display: inline;
+    align-items: center;
+    justify-content: space-between;
+
+
 }
 
 
@@ -45,6 +51,7 @@
     font-size: 16px;
     color:black;
     line-height: 5.0rem;
+    display: inline;
 
 }
 
@@ -74,7 +81,7 @@
     width: 30px;
     height: 30px;
     margin: 0;
-    border-radius: 50%;
+    border-radius: 3px;
     color: white;
     text-decoration: none;
     border:none;
@@ -86,6 +93,31 @@
  color: red;
  box-shadow: rgba(100,100,111, 0.2) 0px 3px 3px 3px;
 }
+
+.modal-icon-cart{
+    display:inline-block;
+    width: 25px;
+    height: 25px;
+    margin-left: 10px;
+    background-image: url('../icons/shopping_cart_black_24dp.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    vertical-align: text-bottom;
+}
+
+.modal-icon-favorite{
+    display:inline-block;
+    width: 25px;
+    height: 25px;
+    margin-left: 10px;
+    background-image: url('../icons/favorite_border_black_24dp.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    vertical-align: text-bottom;
+}
+
 
 
 
