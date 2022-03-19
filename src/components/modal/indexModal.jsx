@@ -30,7 +30,7 @@ export default function Modal({inputCart, modalState}) {
                   X</button>
                 </div>
                    <div className='modal-image'>
-                      <img  src={inputCart.image} alt='modal' ></img>
+                      <img  src={inputCart.color==='Red'? inputCart.image : 'https://cdn.shopify.com/s/files/1/0603/3031/1875/products/AQ9201-001_2_02f19028-dc92-4365-80e8-0f54b56023d6.jpg?v=1645715716'} alt='modal' ></img>
                    </div>
 
 

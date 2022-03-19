@@ -9,9 +9,9 @@ function IndexCarousel({imgs, modalState}) {
     
     const inputCart = useSelector((state) => state.cart)
     const [cont, setCont] = useState(0);
-    const variBlack = ['https://www.favsole.com/images/2019/11/Matthew-M.-Williams-x-Nike-Free-TR-3-SP-MMW-Black-For-Sale-1.jpg'
-    ,'https://www.favsole.com/images/2019/11/Matthew-M.-Williams-x-Nike-Free-TR-3-SP-MMW-Black-For-Sale-6.jpg'
-    ,'https://www.favsole.com/images/2019/11/Matthew-M.-Williams-x-Nike-Free-TR-3-SP-MMW-Black-For-Sale-4.jpg'
+    const variBlack = ['https://cdn.shopify.com/s/files/1/0603/3031/1875/products/AQ9201-001_2_02f19028-dc92-4365-80e8-0f54b56023d6.jpg?v=1645715716'
+    ,'https://cdn.shopify.com/s/files/1/0603/3031/1875/products/AQ9201-001_3_7cb8e5b7-fe9c-4140-af7f-d76525c1c1f1.jpg?v=1645716058'
+    ,'https://cdn.shopify.com/s/files/1/0603/3031/1875/products/AQ9201-001_4_b95f05e5-9c4a-4417-b224-51263c8a7385.jpg?v=1645716345'
     ,'https://cdn.shopify.com/s/files/1/0603/3031/1875/products/AQ9201-001_5.jpg?v=1645716674'];
 
 
