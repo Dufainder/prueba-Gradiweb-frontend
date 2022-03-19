@@ -57,26 +57,20 @@ function IndexCarousel({imgs, modalState}) {
        
        <div className='indicador-container'>
 
-        {(inputCart?.color==='Red')? imgs.images.map( (e, i) =>(
+        {imgs?.images? imgs.images.map( (e, i) =>(
             
             <div key={i} className={cont===i? 'indicador-on':'indicador-off'}/>
             
             ))
             : 
-            variBlack.map( (e,i) =>(
-
-         
-              <img className='ClassImagen' src={e} key={i} 
-              alt="image2"/>
-   
-             ))}
+            <></>}
      </div>
 
  
  <div id='foot-images'>
 
  
- {imgs?.images? imgs.images.map( (e,i) =>(
+ {(inputCart?.color==='Red')? imgs.images.map( (e,i) =>(
    
       (i!==0?
       <div key={i+10} >
@@ -88,7 +82,17 @@ function IndexCarousel({imgs, modalState}) {
    
    ))
    : 
-   <></>
+   variBlack.map( (e,i) =>(
+   
+    (i!==0?
+    <div key={i+10} >
+    <img  id='foot-images-img' src={e} 
+    alt="image8"/> 
+    </div>
+    : <></>)
+  
+ 
+ ))
    
    }
 
