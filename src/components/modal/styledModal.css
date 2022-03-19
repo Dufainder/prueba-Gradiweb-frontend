@@ -216,7 +216,7 @@
 @media (max-width: 440px) {
     .modal-container{
         width: 75%;
-        height: 70%;
+        height: 50%;
         max-width: 600px;
         min-width: 100px;
         background-color: snow;
