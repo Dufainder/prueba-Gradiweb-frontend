@@ -9,10 +9,10 @@ function IndexCarousel({imgs, modalState}) {
     
     const inputCart = useSelector((state) => state.cart)
     const [cont, setCont] = useState(0);
-    const variBlack = ['https://cdn.shopify.com/s/files/1/0603/3031/1875/products/AQ9201-001_2_02f19028-dc92-4365-80e8-0f54b56023d6.jpg?v=1645715716'
-    ,'https://cdn.shopify.com/s/files/1/0603/3031/1875/products/AQ9201-001_3_7cb8e5b7-fe9c-4140-af7f-d76525c1c1f1.jpg?v=1645716058'
-    ,'https://cdn.shopify.com/s/files/1/0603/3031/1875/products/AQ9201-001_4_b95f05e5-9c4a-4417-b224-51263c8a7385.jpg?v=1645716345'
-    ,'https://cdn.shopify.com/s/files/1/0603/3031/1875/products/AQ9201-001_5.jpg?v=1645716674'];
+    const variBlack = ['https://www.highsnobiety.com/static-assets/thumbor/m7v4i_jQRSzoCz2RMT645L7d43A=/1600x1067/www.highsnobiety.com/static-assets/wp-content/uploads/2018/06/06224809/matthew-williams-s19-nike-mmw-closer-look-14.jpg'
+    ,'https://cms-cdn.thesolesupplier.co.uk/2019/08/MMW-x-Nike-Free-TR-Flyknit-3-Black-AQ9201-001-front_w900.jpg.webp'
+    ,'https://cms-cdn.thesolesupplier.co.uk/2019/08/MMW-x-Nike-Free-TR-Flyknit-3-Black-AQ9201-001-back_w900.jpg.webp'
+    ,'https://images.solecollector.com/images/fl_lossy,q_auto/pjzdsc9cnwkmqladbsps/matthew-m-williams-nike-free-tr-3-sp-black-detail'];
 
 
 
