@@ -29,8 +29,8 @@ export default function Modal({inputCart, modalState}) {
                    <button className='modal-cerrar-button' onClick={()=>handleClose()}>
                   X</button>
                 </div>
-                   <div className='modal-image'>
-                      <img  src={inputCart.color==='Red'? inputCart.image : 'https://www.highsnobiety.com/static-assets/thumbor/m7v4i_jQRSzoCz2RMT645L7d43A=/1600x1067/www.highsnobiety.com/static-assets/wp-content/uploads/2018/06/06224809/matthew-williams-s19-nike-mmw-closer-look-14.jpg'} alt='modal' ></img>
+                   <div>
+                      <img className='modal-image' src={inputCart.color==='Red'? inputCart.image : 'https://www.highsnobiety.com/static-assets/thumbor/m7v4i_jQRSzoCz2RMT645L7d43A=/1600x1067/www.highsnobiety.com/static-assets/wp-content/uploads/2018/06/06224809/matthew-williams-s19-nike-mmw-closer-look-14.jpg'} alt='modal' ></img>
                    </div>
 
 
