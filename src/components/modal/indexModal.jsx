@@ -30,7 +30,7 @@ export default function Modal({inputCart, modalState}) {
                   X</button>
                 </div>
                    <div className='modal-image'>
-                      <img  src={inputCart.color==='Red'? inputCart.image : 'https://cdn.shopify.com/s/files/1/0603/3031/1875/products/AQ9201-001_2_02f19028-dc92-4365-80e8-0f54b56023d6.jpg?v=1645715716'} alt='modal' ></img>
+                      <img  src={inputCart.color==='Red'? inputCart.image : 'https://www.highsnobiety.com/static-assets/thumbor/m7v4i_jQRSzoCz2RMT645L7d43A=/1600x1067/www.highsnobiety.com/static-assets/wp-content/uploads/2018/06/06224809/matthew-williams-s19-nike-mmw-closer-look-14.jpg'} alt='modal' ></img>
                    </div>
 
 

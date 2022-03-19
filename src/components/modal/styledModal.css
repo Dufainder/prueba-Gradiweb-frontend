@@ -56,7 +56,7 @@
 }
 
 .modal-image{
-    width: 100%;
+    width: 50%;
     height: 50% ;
     display: flex;
     min-width: 50px;
@@ -253,10 +253,10 @@
     }
 }
 
-@media (max-width: 330px) {
+@media (min-width: 330px) {
     .modal-container{
         width: 85%;
-        height: 90%;
+        height: 82%;
         max-width: 600px;
         background-color: snow;
         position: absolute;
@@ -268,8 +268,8 @@
 
     .modal-image{
            
-        width: 60%;
-        height: 30% ;
+        width: 70%;
+        height: 50% ;
        }
      
        .modal-title h3{
