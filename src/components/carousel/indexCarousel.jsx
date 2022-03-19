@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react'
+import React, {useState} from 'react'
 import { Carousel } from 'react-responsive-carousel';
 import { useSelector } from 'react-redux';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
@@ -13,7 +13,7 @@ function IndexCarousel({imgs, modalState}) {
     ,'https://www.favsole.com/images/2019/11/Matthew-M.-Williams-x-Nike-Free-TR-3-SP-MMW-Black-For-Sale-6.jpg'
     ,'https://www.favsole.com/images/2019/11/Matthew-M.-Williams-x-Nike-Free-TR-3-SP-MMW-Black-For-Sale-4.jpg'
     ,'https://cdn.shopify.com/s/files/1/0603/3031/1875/products/AQ9201-001_5.jpg?v=1645716674'];
-    console.log(inputCart, 'dessde el carrusel')
+
 
 
 
@@ -57,13 +57,19 @@ function IndexCarousel({imgs, modalState}) {
        
        <div className='indicador-container'>
 
-        {imgs?.images? imgs.images.map( (e, i) =>(
+        {(inputCart?.color==='Red')? imgs.images.map( (e, i) =>(
             
             <div key={i} className={cont===i? 'indicador-on':'indicador-off'}/>
             
             ))
             : 
-            <></>}
+            variBlack.map( (e,i) =>(
+
+         
+              <img className='ClassImagen' src={e} key={i} 
+              alt="image2"/>
+   
+             ))}
      </div>
 
  
