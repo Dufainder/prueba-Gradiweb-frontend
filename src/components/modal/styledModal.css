@@ -58,7 +58,7 @@
 
 .modal-image{
     width: 70%;
-    height: 50% ;
+    height: 20% ;
     display: flex;
     min-width: 50px;
     min-height: 5px;
@@ -144,13 +144,24 @@
         font-size: 20px;
     }
 
+    .modal-image{
+        width: 50%;
+        height: 20% ;
+        display: flex;
+        min-width: 50px;
+        max-width: 350px;
+        max-height: 200px;
+    
+       }
+
 }
 
 @media (max-width: 900px) {
     .modal-container{
-        width: 45%;
+        width: 35%;
         height: 75%;
         max-width: 600px;
+        min-width: 350px;
         background-color: snow;
         position: absolute;
         border-radius: 5px;
@@ -164,6 +175,19 @@
         font-size: 15px;
     }
 
+    
+    .modal-image{
+        width: 50%;
+        height: 20% ;
+        display: flex;
+        min-width: 150px;
+        max-width: 350px;
+        max-height: 200px;
+    
+       }
+
+
+
 }
 
 
@@ -172,6 +196,7 @@
         width: 65%;
         height: 70%;
         max-width: 600px;
+        min-width: 150px;
         background-color: snow;
         position: absolute;
         border-radius: 5px;
@@ -193,6 +218,7 @@
         width: 75%;
         height: 70%;
         max-width: 600px;
+        min-width: 100px;
         background-color: snow;
         position: absolute;
         border-radius: 5px;
